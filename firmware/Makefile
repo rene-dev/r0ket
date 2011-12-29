@@ -84,7 +84,7 @@ flash: all
 %.o : %.c
 	$(CC) $(CFLAGS) -o $@ $<
 
-table.c: l0dable/EXPORTS
+table.c:
 	./l0dable/mktable.pl
 
 ### Make all libraries...
